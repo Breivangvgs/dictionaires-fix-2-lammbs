@@ -8,4 +8,26 @@ Dictionary = {
     } 
 del Dictionary[30]
 
-print(Dictionary)
+
+v = 20
+
+if v in Dictionary.values():
+    print(f"The value {v} exists in the dictionary.")
+else:
+    print(f"The value {v} does not exist in the dictionary.")
+
+v = 40
+
+if v in Dictionary.values():
+    print(f"The value {v} exists in the dictionary.")
+else:
+    print(f"The value {v} does not exist in the dictionary.")
+
+
+v = 60
+
+if v in Dictionary.values():
+    print(f"The value {v} exists in the dictionary.")
+else:
+    print(f"The value {v} does not exist in the dictionary.")
+

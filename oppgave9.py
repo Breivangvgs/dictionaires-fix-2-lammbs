@@ -1,33 +1,16 @@
 Dictionary = {
     "Ti": 10, 
     "Tjue": 20, 
-    "Tretti": 30, 
-    30: "Tretti", 
+    "Thirty": 30, 
     "Førti": 40, 
     "Femti": 50
-    } 
-del Dictionary[30]
+    }
 
+Dictionary.update({}) 
 
-v = 20
+val = Dictionary.pop("Thirty")
+Dictionary['Tretti'] = val
 
-if v in Dictionary.values():
-    print(f"The value {v} exists in the dictionary.")
-else:
-    print(f"The value {v} does not exist in the dictionary.")
-
-v = 40
-
-if v in Dictionary.values():
-    print(f"The value {v} exists in the dictionary.")
-else:
-    print(f"The value {v} does not exist in the dictionary.")
-
-
-v = 60
-
-if v in Dictionary.values():
-    print(f"The value {v} exists in the dictionary.")
-else:
-    print(f"The value {v} does not exist in the dictionary.")
-
+sorted_Dictionary = sorted(Dictionary.items(), key=lambda x: x[1])
+sorted_Dictionary = dict(sorted_Dictionary)
+print(sorted_Dictionary)
